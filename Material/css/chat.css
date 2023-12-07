@@ -1,0 +1,236 @@
+body {
+    /* display: flex; */
+    min-height: 00vh;
+    background: rgba(0, 0, 0, 0);
+    /* flex-direction: column; */
+    position: absolute;
+    bottom: 10px;
+}
+
+.wrapper {
+    background: #fff;
+    width: 500;
+    border-radius: 16px;
+    box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+/* Signup Form CSS */
+.form {
+    /* padding: 7.5%; */
+    padding: 25px 30px;
+}
+
+.form header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* .form form {
+    margin: 20px 0;
+} */
+
+.form .name-details {
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+/* form .name-details .field:first-child {
+    margin-right: 10px;
+}
+
+form .name-details .field:last-child {
+    margin-left: 10px;
+} */
+
+.form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* .form .field label {
+    margin-bottom: 2px;
+} */
+
+/* .form .field input {
+    outline: none;
+} */
+
+.form .input select {
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* outline: none !important; */
+    border: 1px solid #ccc;
+}
+
+.form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form .error {
+    text-align: center;
+    font-size: 20px;
+    background: #bbbbbb;
+    color: #f00;
+    border-radius: 5px;
+}
+
+.form .button button {
+    margin-top: 5px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    /* font-weight: 400; */
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form .input select:focus,
+.form .input input:focus,
+.form .button button:focus {
+    outline: none !important;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px #719ECE;
+    transition: 0.25s;
+}
+
+/* Chat */
+.chat-area header {
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 12px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-area header span {
+    font-size: 17px;
+    /* font-weight: 500; */
+}
+
+.chat-box {
+    height: 500px;
+    overflow-y: auto;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+        inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+
+/* .chat-box .chat {
+    margin: -10px 0;
+} */
+
+.chat-box .chat p {
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+        0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+/* .chat-box .chat sub {
+    margin-top: 0px;
+} */
+
+.chat-box .outgoing {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.outgoing .details {
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+
+.outgoing .details p {
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+
+.chat-box .incoming {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.incoming .details {
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+
+.incoming .details p {
+    color: #333;
+    background: #fff;
+    border-radius: 18px 18px 18px 0;
+}
+
+.incoming .details .time,
+.outgoing .details .time {
+    font-style: italic;
+}
+
+/* .incoming .details .arrow,
+.outgoing .details .arrow {
+    margin-right: 5px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.incoming .details .up,
+.outgoing .details .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+} */
+
+.chat-area .typing-area {
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typing-area input {
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.typing-area button {
+    width: 55px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.typing-area input:focus,
+.typing-area button:focus {
+    outline: none !important;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px #719ECE;
+    transition: 0.25s;
+}

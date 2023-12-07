@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat App - Chat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="Material\js\moment-with-locales.js"></script>
+    <script src="Material\js\moment-timezone-with-data.js"></script>
+    <script src="Material\js\chat.js"></script>
+    <link rel="stylesheet" href="material/css/chat.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="chat-area">
+            <header id="header">
+                <div class="details">
+                    <button id="chatbox-collapse-button" type="button" class="btn btn-link btn-lg btn-block"
+                        data-toggle="collapse" data-target="#chatbox-area" aria-expanded="true">
+                        <i class="glyphicon glyphicon-comment"></i><span><b>Chatroom</b></span>
+                        <footer><small>Click to show/hide chatroom</small></footer>
+                    </button>
+
+                </div>
+            </header>
+            <div id="chatbox-area" class="collapse in" aria-expanded="true">
+                <div id="chatbox" class="chat-box"></div>
+                <div id="errorMessageSlot"></div>
+                <div class="typing-area">
+                    <input id="message-input" type="text" placeholder="Type a message here..." maxlength="240">
+                    <button id="sendMessageButton"><i class="glyphicon glyphicon-send"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
